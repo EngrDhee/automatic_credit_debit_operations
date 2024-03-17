@@ -1,7 +1,7 @@
 # Credit and Debit Operations Automation Script
 
 ## Introduction
-The Credit and Debit Operations Automation Script is a Python script designed to automate the process of crediting and debiting main and bonus balances of subscriber lines for Globacom Nigeria. It aims to address the inefficiencies and potential errors associated with manual operations. By automating these tasks, the script offers significant improvements in:
+The Credit and Debit Operations Automation Script is a Python script designed to automate the process of crediting and debiting main and bonus balances of subscriber lines for a Telecommunication company. It aims to address the inefficiencies and potential errors associated with manual operations. By automating these tasks, the script offers significant improvements in:
 - Efficiency
 - Accuracy
 - Ease of troubleshooting
@@ -73,14 +73,10 @@ The script is designed for continuous improvement, and future enhancements are p
 - Error Handling
 - Security Enhancements
 
-## License
-This project is licensed under the Globacom License.
 
 ## Author
 This project was authored by Suleiman Dayo Abdullahi.
 
-## Acknowledgements
-Special thanks to my Globacom colleagues (Intelligent Network Unit TEAM) for their contributions and support.
 
 ## Additional Sections
 For additional information, refer to the script's source code and comments.
