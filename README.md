@@ -9,7 +9,7 @@ The Credit and Debit Operations Automation Script is a Python script designed to
 The script prioritizes security by masking sensitive credentials and eliminating their hardcoding.
 
 ## Problem Statement
-The existing process of crediting and debiting subscriber balances at Globacom Nigeria suffers from several shortcomings:
+The existing process of crediting and debiting subscriber balances suffers from several shortcomings:
 - Multiple and Individual Operations: Manual credit and debit operations require separate actions, leading to time consumption and potential inconsistencies.
 - Difficult Output Interpretation: Manual outputs can be challenging to interpret, hindering clear understanding of the actions performed.
 - Troubleshooting Challenges: Troubleshooting manual operations can be cumbersome due to a lack of clear audit trails.
