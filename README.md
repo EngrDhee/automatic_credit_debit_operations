@@ -1,89 +1,93 @@
-Credit and Debit Operations Automation Script
-Introduction
-The Credit and Debit Operations Automation Script is a Python script developed to automate the process of crediting and debiting main and bonus balances of subscriber lines for Globacom Nigeria. The script aims to address the challenges faced in manually performing these operations, including tediousness, time consumption, and the potential for human error. By automating these operations, the script improves efficiency, accuracy, and ease of troubleshooting. The script was designed with security considerations and masking to eliminate hardcoding of sensitive credentials.
+# Credit and Debit Operations Automation Script
 
-Problem Statement
-The existing process of crediting and debiting main and bonus balances for subscriber lines at Globacom Nigeria suffers from several shortcomings:
+## Introduction
+The Credit and Debit Operations Automation Script is a Python script designed to automate the process of crediting and debiting main and bonus balances of subscriber lines for Globacom Nigeria. It aims to address the inefficiencies and potential errors associated with manual operations. By automating these tasks, the script offers significant improvements in:
+- Efficiency
+- Accuracy
+- Ease of troubleshooting
 
-Multiple and Individual Operations
-Difficult Output Interpretation
-Troubleshooting Challenges
-Human Error
-Solution Overview
-The Credit and Debit Operations Automation Script addresses the above challenges by automating the process of crediting and debiting main and bonus balances. The script combines all operations into a single script, enhances output readability, logs operations for troubleshooting, simplifies input data injection, and is designed with the future prospect of integration with a web service for GUI use.
+The script prioritizes security by masking sensitive credentials and eliminating their hardcoding.
 
-Script Functionality
-Session Management
-Balance Adjustment
-Bucket Adjustment
-Logging
-Input Parsing
-Main and Bonus Operations
-Error Handling
-Getting Started
-To get started with the script, follow these steps:
+## Problem Statement
+The existing process of crediting and debiting subscriber balances at Globacom Nigeria suffers from several shortcomings:
+- Multiple and Individual Operations: Manual credit and debit operations require separate actions, leading to time consumption and potential inconsistencies.
+- Difficult Output Interpretation: Manual outputs can be challenging to interpret, hindering clear understanding of the actions performed.
+- Troubleshooting Challenges: Troubleshooting manual operations can be cumbersome due to a lack of clear audit trails.
+- Human Error: Manual processes are prone to human error, which can have financial and service-related consequences.
 
-Clone the repository.
-Install the required dependencies mentioned in Requirement.txt.
-Run the script using Python 2.7.
-Follow the usage instructions provided below.
-Usage
-Installation:
-Clone the repository to your local machine.
-Ensure Python is installed (python --version).
-Install required dependencies (pip install requests).
-Configuration:
-Ensure a config.ini file is available in the script directory, containing necessary configuration parameters.
-Running the Script:
-Execute the script using Python (python credit_debit.py).
-Pass single operation to Command Line Arguments i.e:
-./credit_debit.py 234xxxxxxxxx main +amount bonus +amount bucket_id
-./credit_debit.py 234xxxxxxxxx main -amount bonus -amount
-Alternatively, provide a filename containing MSISDNs as input for bulk operations i.e.:
-./credit_debit.py filename.txt
-Output:
-The script will generate output files in the IN_Operations_logs/Credit_Debit_logs directory.
-Output files contain details of credit and debit operations performed on subscriber lines.
-Configuration File
-The config.ini file must be configured with the following parameters:
+## Solution Overview
+The Credit and Debit Operations Automation Script tackles these challenges by:
+- Automating Operations: Combining all credit and debit operations into a single script streamlines the process.
+- Enhancing Output Readability: The script generates clear and well-formatted outputs for easy interpretation.
+- Logging Operations: Script execution is logged for effective troubleshooting purposes.
+- Simplifying Input Data Injection: The script offers flexible input options for both individual operations and bulk processing through files.
+- Future Web Service Integration: The script's design allows for potential future integration with a web service for a graphical user interface (GUI).
 
-soap_url: URL for the SOAP service.
-eSM_url: Default URL for the SOAP service.
-header: Headers for the HTTP request.
-key: Key for authentication.
-Soap_username: Username for SOAP service authentication.
-Soap_password: Password for SOAP service authentication.
-acct_query_names: XML names for account query.
-bundle_query_names: XML names for bundle query.
-main_adj_names: XML names for main balance adjustment.
-bucket_adj_names: XML names for bucket adjustment.
-Logging
-Log files are stored in the IN_Operations_logs/Credit_Debit_logs directory.
-Logs include timestamps, log levels, and execution details.
-Contributing
+## Script Functionality
+The script offers the following functionalities:
+- Session Management: Establishes and manages connections to the relevant systems.
+- Balance Adjustment: Automates credit and debit adjustments for both main and bonus balances.
+- Bucket Adjustment: Enables adjustments to specific bonus buckets.
+- Logging: Records script execution details for audit purposes.
+- Input Parsing: Effectively handles user input for individual and bulk operations.
+- Main and Bonus Operations: Supports independent operations on main and bonus balances.
+- Error Handling: Implements mechanisms to gracefully handle potential errors during script execution.
+
+## Getting Started
+To use the script, follow these steps:
+1. Clone the Repository
+2. Install Dependencies
+3. Run the Script
+4. Follow Usage Instructions
+
+## Usage
+1. Installation
+2. Configuration
+3. Running the Script
+4. Output
+
+## Configuration File
+The `config.ini` file requires the following configurations:
+- `soap_url`
+- `eSM_url`
+- `header`
+- `key`
+- `Soap_username`
+- `Soap_password`
+- `acct_query_names`
+- `bundle_query_names`
+- `main_adj_names`
+
+## Logging
+- Log files are stored in the `IN_Operations_logs/Credit_Debit_logs` directory.
+
+## Contributing
 Contributions to the project are welcome. To contribute, follow these steps:
+1. Fork the repository.
+2. Make your changes.
+3. Submit a pull request.
 
-Fork the repository.
-Make your changes.
-Submit a pull request.
-Future Enhancements
+## Future Enhancements
 The script is designed for continuous improvement, and future enhancements are planned:
+- Graphical User Interface (GUI)
+- Error Handling
+- Security Enhancements
 
-Graphical User Interface (GUI)
-Error Handling
-Security Enhancements
-License
+## License
 This project is licensed under the Globacom License.
 
-Author
+## Author
 This project was authored by Suleiman Dayo Abdullahi.
 
-Acknowledgements
+## Acknowledgements
 Special thanks to my Globacom colleagues (Intelligent Network Unit TEAM) for their contributions and support.
 
-Additional Sections
+## Additional Sections
 For additional information, refer to the script's source code and comments.
 
-Note: The script is built for Python 2.7. Other modules are inbuilt in Python 2.7. Required dependencies are listed in Requirement.txt.
+**Note:** The script is built for Python 2.7. Other modules are inbuilt in Python 2.7. Required dependencies are listed in `Requirement.txt`.
 
-This README provides an overview of the script's functionality, usage instructions, configuration details, logging information, contribution guidelines, and author attribution. It aims to facilitate understanding and usage of the credit_debit.py script for performing credit and debit operations on subscriber balances.
+---
+
+This README provides an overview of the script's functionality, usage instructions, configuration details, logging information, contribution guidelines, and author attribution. It aims to facilitate understanding and usage of the `credit_debit.py` script for performing credit and debit operations on subscriber balances.
+
